@@ -57,15 +57,14 @@ body {
   margin-top: 20px;
 }
 
-.floating-balls {
-  display: none;
-}
+/* no need to hide something that doesn't exist*/
 
 @media only screen and (min-width: 768px) {
 
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .heading1 {
@@ -79,7 +78,8 @@ body {
 }
 
 .nav-item {
-  padding: 10px;
+  margin-top: 0px;
+  margin-left: 10px;
 }
 
 .main-content {
@@ -94,8 +94,12 @@ body {
 .floating-balls {
   flex: 1;
   position: relative;
-  display: block;
 }
+
+/* no need to set it to block because it is default block 
+
+should use a second class to give the circles common properites with out replicating the code.
+*/
 
 .ball-uno {
   background-color: rgba(247, 136, 167, 0.6);
